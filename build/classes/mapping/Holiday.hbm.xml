@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> <hibernate-mapping> 
+<class name="classes.Holiday" table="holiday"> 
+<id name="holidayId" type="int" column="Holiday_id"> 
+<generator class="increment"/>
+ </id> 
+ <property name="startingDate" column="Starting_Date" type="java.sql.Date"/> 
+
+ <property name="endingDate" column="Ending_Date" type="java.sql.Date"/> 
+ <property name="employeeId" column="Employee_Id" type="int"/>
+
+    </class>
+   </hibernate-mapping>
